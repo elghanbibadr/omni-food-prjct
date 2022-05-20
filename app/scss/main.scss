@@ -1,0 +1,12 @@
+@import './partials/general';
+@import './partials/variabels';
+@import './partials/mixins';
+@import './partials/typography';
+
+// add some basic styles for all the sections
+.section{
+    max-width: 130rem;
+    background-color: red;
+    height: 16rem;
+    margin-inline: auto;
+}

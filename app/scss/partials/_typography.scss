@@ -1,0 +1,52 @@
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+color: $heading;
+line-height: 1;
+}
+
+h1{
+    font-size: 3.5rem;
+}
+
+h2{
+    font-size: 2.8rem;
+}
+
+h3{
+    font-size: 2.2rem;
+}
+
+h4{
+    font-size: 1.7rem;
+}
+p{
+    font-size: 1.7rem ;
+    color: $textColor;
+    line-height: 1.4;
+}
+
+// styles for desktops
+
+@include desktop{
+    h1{
+        font-size: 4rem;
+    }
+    h2{
+        font-size: 3.2rem;
+    }
+    h3{
+         font-size: 2.3rem;
+    }
+    h4{
+        font-size: 2rem;
+    }
+
+    p{
+        font-size: 1.9rem;
+    }
+}
