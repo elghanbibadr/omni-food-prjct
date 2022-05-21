@@ -2,11 +2,37 @@
 @import './partials/variabels';
 @import './partials/mixins';
 @import './partials/typography';
+@import './partials/btn';
 
 // add some basic styles for all the sections
 .section{
-    max-width: 130rem;
-    background-color: red;
-    height: 16rem;
-    margin-inline: auto;
+     max-width: 130rem;
+     margin-inline: auto;
+     padding-inline: 1rem;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding:2rem 1rem;
+    &__logo{
+        height: 2rem;
+    }
+    &__hamburger{
+        height: 2.5rem;
+    }
+    // list
+    &__list{
+        display: inherit;
+        display: none;
+        
+        li{
+            a{
+                color: $heading;
+                font-size: 2rem;
+                font-weight: bold;
+
+            }
+        }
+    }
 }
