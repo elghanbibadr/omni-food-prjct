@@ -427,8 +427,11 @@ p {
 
 .section {
   max-width: 130rem;
-  margin-inline: auto;
   padding-inline: 1rem;
+}
+
+header {
+  background: #fdf2e9;
 }
 
 .nav {
@@ -438,25 +441,102 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2rem 1rem;
+  padding: 4rem 2rem;
+  position: relative;
 }
 
 .nav__logo {
-  height: 2rem;
+  height: 2.1rem;
 }
 
 .nav__hamburger {
   height: 2.5rem;
 }
 
-.nav__list {
-  display: inherit;
-  display: none;
+@media (min-width: 59em) {
+  .nav__hamburger {
+    display: none;
+  }
+}
+
+@media (max-width: 59em) {
+  .nav__collapsibles {
+    background-color: white;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 9rem;
+    -webkit-transform: translateX(600px);
+            transform: translateX(600px);
+  }
+}
+
+.nav .showNav {
+  -webkit-transform: translateX(0px);
+          transform: translateX(0px);
+  display: block;
+}
+
+.nav__check, .nav__hamburger {
+  cursor: pointer;
+}
+
+.nav__check {
+  height: 2.3rem;
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+}
+
+@media (min-width: 59em) {
+  .nav__check {
+    display: none;
+  }
+}
+
+@media (min-width: 59em) {
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 120%;
+  }
+}
+
+.nav__list li {
+  margin-inline: 2rem;
+}
+
+@media (max-width: 59em) {
+  .nav__list li {
+    margin-block: 4rem;
+  }
 }
 
 .nav__list li a {
   color: #333;
   font-size: 2rem;
   font-weight: bold;
+}
+
+@media (min-width: 59em) {
+  .nav__list li a {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+}
+
+@media (min-width: 59em) {
+  .nav__list li {
+    margin-inline: 1rem;
+  }
+}
+
+.nav__list :last-child {
+  position: relative;
+  top: -0.4rem;
 }
 /*# sourceMappingURL=main.css.map */

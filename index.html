@@ -12,30 +12,29 @@
 </head>
 <body>
    
-   <header class="section">
-     <!-- navigation menu -->  
-     <div class="nav">
-        <img class="nav__logo" src="/img/omnifood-logo.png" alt="the omnifood-logo">
-        <!-- list -->
-        <ul class="nav__list">
-          <li class="nav__link"><a href="#">How it works</a></li>
-          <li class="nav__link"><a href="#">Meals</a></li>
-          <li class="nav__link"><a href="#">Testimonials</a></li>
-          <li class="nav__link"><a href="#">Pricing</a></li>
-        </ul>
-         <img class="nav__hamburger" src="/img/bars-solid.svg" alt="the hamburger logo">
-      </div>
-      <div class="hero"></div>
+   <header>
+     <section class="section">
+       <!-- navigation menu -->  
+       <div class="nav">
+          <img class="nav__logo" src="/img/omnifood-logo.png" alt="the omnifood-logo">
+          <!-- list -->
+          <div class="nav__collapsibles">
+            <img src="/img/x-solid.svg" alt="an image of an X sign" class="nav__check">
+            <ul class="nav__list">
+              <li class="nav__link"><a href="#">How it works</a></li>
+              <li class="nav__link"><a href="#">Meals</a></li>
+              <li class="nav__link"><a href="#">Testimonials</a></li>
+              <li class="nav__link"><a href="#">Pricing</a></li>
+              <li class="nav__link"><a href="#"><button class="btn btn--primary">Try for free</button></a></li>
+            </ul>
+          </div>
+           <img class="nav__hamburger" src="/img/bars-solid.svg" alt="the hamburger logo">
+        </div>
+        <div class="hero"></div>
+     </section>
   </header> 
 
-  <button class="btn btn--primary">
-Try for free
-  </button>
-  <button class="btn btn--secondary">
-    Learn more
-  </button>
-  <button class="btn btn--accent">
-    Sign up now
-  </button>
+ 
+  <script src="/app/Js/main.js"></script>
 </body>
 </html>
