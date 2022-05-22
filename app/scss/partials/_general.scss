@@ -31,7 +31,16 @@ input{
   
   /* Sections
      ========================================================================== */
-  
+  // add some basic styles for all the sections
+.section{
+  max-width: 130rem;
+ padding-inline: 2rem;
+ @include desktop{
+   max-width: 200rem;
+   margin-inline: auto;
+ }
+ 
+}
   /**
    * Remove the margin in all browsers.
    */

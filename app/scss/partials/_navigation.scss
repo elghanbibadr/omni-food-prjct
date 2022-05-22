@@ -1,0 +1,80 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding:4rem 2rem;
+    position: relative;
+    &__logo{
+        height: 2.1rem;
+        transform: scale(0.9);
+        position: relative;
+        left: -2rem;
+    }
+    &__hamburger{
+        height: 2.6rem;
+        @include desktop{
+            display: none;
+        }
+    }
+    // collapsible 
+    &__collapsibles{
+        @include desktop2{
+            background-color: white;
+            position: absolute;
+            left:0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            text-align: center;
+            padding-top: 9rem;
+            transform: translateX(110%);
+            transition: transform 0.6s;
+        }
+     
+    }
+
+    .showNav{
+         transform: translateX(-2rem);
+    }
+    &__check,&__hamburger{
+        cursor: pointer;
+    }
+    &__check{
+        @include desktop{
+            display: none;
+        }
+        height: 2.3rem;
+        position: absolute;
+        top: 4rem;
+        right: 6rem;
+    }
+    // list
+    &__list{
+        @include desktop{
+            display: flex;
+            width: 120%;
+        }
+        
+        li{
+             margin-inline: 2rem;
+            @include desktop2{
+                margin-block: 4rem;
+}
+            a{
+                color: $heading;
+                font-size: 2rem;
+                font-weight: bold;
+            @include desktop{
+                font-size: 1.8rem;
+                font-weight: 500;
+            }
+            }
+            @include desktop{
+                margin-inline: 1rem;
+            }
+        }
+        & :last-child{
+            position:relative;
+            top: -0.4rem;
+        }
+    }
+}

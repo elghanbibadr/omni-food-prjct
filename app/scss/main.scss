@@ -1,93 +1,38 @@
-@import './partials/general';
 @import './partials/variabels';
 @import './partials/mixins';
+@import './partials/general';
 @import './partials/typography';
+@import './partials/grid';
 @import './partials/btn';
+@import './partials/navigation';
 
-// add some basic styles for all the sections
-.section{
-      max-width: 130rem;
-    //  margin-inline: autos;
-         padding-inline: 1rem;
-     
-}
+
+
 header{
     background:$desaturated-orange;
+    overflow: hidden;
 }
-.nav{
-    display: flex;
-    justify-content: space-between;
-    padding:4rem 2rem;
-    position: relative;
-    &__logo{
-        height: 2.1rem;
+
+.hero{
+    &__text{
+        margin-block: 3.4rem;
     }
-    &__hamburger{
-        height: 2.5rem;
+    text-align: center;
+    &__btn{
+        margin-left: 14px;
+    }
+    &__img{
+        max-width: 90%;
+        margin-top: 5rem;
+        justify-self: center;
         @include desktop{
-            display: none;
+            margin-top: 0;
         }
-    }
-    // collapsible 
-    &__collapsibles{
-        @include desktop2{
-            background-color: white;
-            display: none;
-            position: absolute;
-            left:0;
-            top: 0;
-            width: 100%;
-             text-align: center;
-             padding-top: 9rem;
-             transform: translateX(600px);
-        }
-     
     }
 
-    .showNav{
-         transform: translateX(0px);
-         display: block;
-    }
-    &__check,&__hamburger{
-        cursor: pointer;
-    }
-    &__check{
-        @include desktop{
-            display: none;
-        }
-        height: 2.3rem;
-        position: absolute;
-        top: 3rem;
-        right: 3rem;
-    }
-    // list
-    &__list{
-        @include desktop{
-            display: flex;
-            width: 120%;
-        }
-        
-        li{
-             margin-inline: 2rem;
-            @include desktop2{
-                margin-block: 4rem;
-}
-            a{
-                color: $heading;
-                font-size: 2rem;
-                font-weight: bold;
-            @include desktop{
-                font-size: 1.8rem;
-                font-weight: 500;
-            }
-            }
-            @include desktop{
-                margin-inline: 1rem;
-            }
-        }
-        & :last-child{
-            position:relative;
-            top: -0.4rem;
-        }
+
+    @include desktop{
+        text-align: left;
     }
 }
+
