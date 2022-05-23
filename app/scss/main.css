@@ -597,6 +597,36 @@ header {
   }
 }
 
+.hero__records {
+  margin-top: 4rem;
+  margin-inline: auto;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.hero__records .record-images img {
+  border-radius: 50%;
+  height: 3rem;
+}
+
+.hero__records .record-number {
+  font-size: 1.3rem;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.hero__records .record-number strong {
+  color: #e67e22;
+}
+
+@media (min-width: 59em) {
+  .hero__records .record-number {
+    font-size: 1.7rem;
+    margin-left: 1.5rem;
+  }
+}
+
 @media (min-width: 59em) {
   .hero {
     text-align: left;
