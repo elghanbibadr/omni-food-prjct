@@ -46,6 +46,11 @@ html {
   }
 }
 
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 /**
    * Remove the margin in all browsers.
    */
@@ -631,5 +636,26 @@ header {
   .hero {
     text-align: left;
   }
+}
+
+main .section {
+  margin-block: 7rem;
+}
+
+.logos {
+  text-align: center;
+}
+
+.logos__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.logos img {
+  width: 15%;
+  margin-left: 2rem;
 }
 /*# sourceMappingURL=main.css.map */

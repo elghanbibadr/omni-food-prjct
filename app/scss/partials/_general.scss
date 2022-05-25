@@ -35,11 +35,15 @@ input{
 .section{
   max-width: 130rem;
  padding-inline: 2rem;
+//  padding-top: 3rem;
  @include desktop{
    max-width: 200rem;
    margin-inline: auto;
  }
  
+}
+img{
+  object-fit: cover;
 }
   /**
    * Remove the margin in all browsers.

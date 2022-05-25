@@ -5,61 +5,21 @@
 @import './partials/grid';
 @import './partials/btn';
 @import './partials/navigation';
-
-
-
-header{
-    background:$desaturated-orange;
-    overflow: hidden;
+@import './partials/hero';
+main {
+    .section{
+        margin-block: 7rem;
+    }
 }
-
-.hero{
-   
-    &__text{
-        margin-block: 3.4rem;
-    }
+.logos{
     text-align: center;
-    &__btn{
-        margin-left: 14px;
+    &__images{
+        display: flex;
+        justify-content: space-around;
     }
-    &__img{
-        max-width: 90%;
-        margin-top: 5rem;
-        justify-self: center;
-        @include desktop{
-            margin-top: 0;
-        }
-    }
-
-  &__records{
-      margin-top: 4rem;
-      margin-inline: auto;
-     display: inline-flex;
-      .record-images{
-         
-          img{
-              border-radius: 50%;
-              height: 3rem;
-              @include desktop{
-                //   height: 4rem;
-              }
-          }
-        }
-        .record-number{
-            font-size: 1.3rem;
-            margin-top: 10px;
-            margin-left:5px;
-            strong{
-                color: $orange;
-            }
-            @include desktop{
-                font-size: 1.7rem;
-                margin-left: 1.5rem;
-            }
-        }
-  }
-    @include desktop{
-        text-align: left;
+    img{
+         width:15%;
+        margin-left: 2rem;
     }
 }
 
