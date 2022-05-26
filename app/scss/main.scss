@@ -6,20 +6,49 @@
 @import './partials/btn';
 @import './partials/navigation';
 @import './partials/hero';
+@import './partials/logos';
 main {
     .section{
         margin-block: 7rem;
     }
 }
-.logos{
-    text-align: center;
-    &__images{
-        display: flex;
-        justify-content: space-around;
-    }
-    img{
-         width:15%;
-        margin-left: 2rem;
-    }
-}
 
+.steps{
+    &__heading{
+        h5{
+            color: $orange;
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+    }
+    .stepsOne{
+        .stepImg{
+            grid-area: 1/2/1/3;
+        }
+        &__img{
+        display: block;
+        margin-inline: auto;
+        width: 30%;
+        @include tablette{
+          width: 60%;
+          margin-top: 13rem;
+         }
+        @include desktop{
+         width: 30%;
+         margin-top: 3rem;
+        }
+        }
+        &__content{
+            align-self: center;
+            margin-top: 3rem;
+            h2{
+                color: #ccc;
+                font-size:5rem;
+                font-weight: bold;
+                margin-block: 0rem;
+            }
+
+        }
+    }
+   
+}

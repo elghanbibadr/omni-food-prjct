@@ -1,0 +1,11 @@
+.logos{
+    text-align: center;
+    &__images{
+        display: flex;
+        justify-content: space-around;
+    }
+    img{
+         width:15%;
+        margin-left: 2rem;
+    }
+}

@@ -7,3 +7,12 @@
         grid-template-columns: repeat(2,1fr);
     }
 }
+@include tablette{
+    .grid-md{
+        display: grid;
+       gap: 1rem;
+    }
+    .grid--cls2-md{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
