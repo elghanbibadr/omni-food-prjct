@@ -1,0 +1,72 @@
+.steps{
+    @include desktop{
+        padding-left: 10rem;
+    }
+    &__heading{
+        h5{
+            color: $orange;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            @include desktop{
+                font-size: 1.7rem;
+            }
+        }
+        h1{
+            @include desktop{
+                margin-top: 0;
+                font-size: 5rem;
+            }
+        }
+    }
+    .stepsOne{
+        .stepImg{
+            grid-area: 1/2/1/3;
+        }
+        &__img{
+        display: block;
+        margin-inline: auto;
+        width: 30%;
+        @include tablette{
+          width: 60%;
+         margin-top: 10rem;
+         }
+        @include desktop{
+         width: 30%;
+         margin-top: 3rem;
+        }
+        }
+        &__content{
+            align-self: center;
+            justify-self: center;
+            margin-top: 3rem;
+            h2{
+                color: #ccc;
+                font-size:5rem;
+                font-weight: bold;
+                margin-block: 0rem;
+                @include desktop{
+                    font-size: 9rem;
+                }
+            }
+
+        }
+    }
+//    steps 2
+ .stepsTwo,.stepsThree{
+ margin-top: 10rem;
+ @include tablette{
+     margin-top: 3rem;
+ }
+ .stepImg{
+     grid-area: 1/1/1/2;
+ }
+}
+// steps three
+.stepsThree{
+    .stepImg{
+        grid-area: 1/2/1/3;
+    }
+}
+
+}
