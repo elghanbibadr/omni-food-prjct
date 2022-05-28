@@ -8,113 +8,76 @@
 @import './partials/hero';
 @import './partials/logos';
 @import './partials/steps';
+@import './partials/cards';
 main {
     .section{
         margin-block: 7rem;
     }
 }
-
-.titles{
-    text-align: center;
-    p{
-        color: $orange;
-        font-weight: 450;
-        text-transform: uppercase;
-    }
-    h2{
-        margin-top: 0;
-        margin-bottom: -2rem;
-    }
-
-}
-.card{
-    background-color: white;
-    box-shadow: 0 0 16px #cccccc;
-    margin-bottom: 20px;
-    overflow: hidden;
-    border-radius: 10px;
-    @include tablette{
-        width: 90%;
-    }
-    &__img{
-        width: 100%;
-        border-radius: 10px 10px 0 0 ;
-    }
-    &__badge{
-        display: flex;
-      & :last-child{
-          background-color:#ffd43b;
-          margin-left: 6px;
-      }
-    }
-    &__body{
-        padding-left: 1.5rem;
-        h5{
-            background-color: rgb(81, 207, 102);
-            width: fit-content;
-            padding: 5px;
-            border-radius: 20px;
-            font-size: 1rem;
-            text-transform: uppercase;
+.testimonial{
+    background-color: $desaturated-orange;
+    padding-block: 3rem;
+    position: relative;
+  
+    &__heading{
+        p{
+            color: $orange;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-block: 0;
         }
-        h3{
-            margin-block: 1rem;
+        h2{
+            font-size: 2.5rem;
+            margin-block: 1rem 2rem;
         }
-    }
-    ul{
-        // margin: 0;
-        position: relative;
-        left: -30px;
-        margin-block: 20px;
-        li {
-            margin-block: 10px;
-            p{
-                display: inline;
-                margin-left: 5px;
-            }
-            img{
-                height: 14px;
+        @include desktop{
+            position: absolute;
+            left: 2rem;
+            top: 20%;
+            @include desktopLarge{
+                left: 3rem;
+                top: 0rem;
             }
         }
     }
-}
-
-.card--centered{
-    box-shadow: none;
-    text-align: center;
-    align-self: center;
-
-    img{
-        margin-right: 2.4rem;
-        width: 1.8rem;
-        
-    }
-    @include tablette{
-        // width: 100vw;
-        grid-column: span 2;
-        
-    }
-    @include desktop{
-        grid-column: span 1;
-    }
-    &-link a{
-        color: $orange;
-        border-bottom: 1px solid $orange;
-        &:hover{
-            border-bottom: none;
+    &__author{
+        column-gap: 3rem;
+        .author{
+            margin-block: 5rem;
+            @include tablette{
+                margin-block: 1.5rem;
+            }
         }
-    }
-    .card-link{
-        display: inline-flex;
         img{
-            height: 10px;
-            margin-top: 22px;
-            cursor: pointer;
-            margin-left: 10px;
-            @include desktop{
-                margin-top: 28px;
-            }
+            border-radius:50%;
+            height: 5rem;
+        }
+        h5{
+        font-size: 1.3rem;
+        font-weight: 500;
+        }
+        @include desktop{
+            align-self: center;
+            // @include desktopLarge{
+            //     align-self: flex-start;
+            // }
         }
     }
-}
+    // gallery
 
+    &__gallery{
+        img{
+            width: 100%;
+            @include desktop{
+                width: 90%;
+            }
+            //  height: auto;s
+           
+        }
+    }
+    // .container{
+    //     @include desktop{
+    //         display: flex;
+    //     }
+    // }
+}

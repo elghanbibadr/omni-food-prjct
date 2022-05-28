@@ -20,5 +20,37 @@
  }
      .grid--cls2-md{
          grid-template-columns: repeat(2,1fr);
+         @include desktop{
+             grid-template-rows: repeat(2,300px);
+         }
      }
- }
+    }
+
+    // small grid starting from mobile all the way to desktop
+    .grid--cls4-sm{
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 1fr 1fr 1fr;
+            @include tablette{
+                grid-template-columns: repeat(6,1fr);
+                grid-template-rows: 1fr 1fr;
+            }
+            @include desktop{
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(6,1fr);
+                @include desktopLarge{
+                    grid-template-columns: repeat(3,1fr);
+                    grid-template-rows: repeat(4,1fr);
+                }
+            }
+    }
+
+
+    @include desktop{
+        .gridLg{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 2rem;
+        }
+    }
