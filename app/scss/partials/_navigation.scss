@@ -11,6 +11,7 @@
     }
     &__hamburger{
         height: 2.6rem;
+       width: 2.8rem;
         @include desktop{
             display: none;
         }
@@ -45,7 +46,7 @@
         height: 2.3rem;
         position: absolute;
         top: 4rem;
-        right: 6rem;
+        right: 9.5rem;
     }
     // list
     &__list{

@@ -1,0 +1,65 @@
+.testimonial{
+    background-color: $desaturated-orange;
+    padding-block: 3rem;
+    position: relative;
+  
+    &__heading{
+        p{
+            color: $orange;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-block: 0;
+        }
+        h2{
+            font-size: 2.5rem;
+            margin-block: 1rem 2rem;
+        }
+        @include desktop{
+            position: absolute;
+            left: 2rem;
+            top: 20%;
+            @include desktopLarge{
+                left: 3rem;
+                top: 0rem;
+            }
+        }
+    }
+    &__author{
+        column-gap: 3rem;
+        .author{
+            margin-block: 5rem;
+            @include tablette{
+                margin-block: 1.5rem;
+            }
+        }
+        img{
+            border-radius:50%;
+            height: 5rem;
+           
+        }
+        h5{
+        font-size: 1.3rem;
+        font-weight: 500;
+        }
+        @include desktop{
+            align-self: center;
+            
+        }
+    }
+    // gallery
+
+    &__gallery{
+        img{
+            width: 100%;
+            transition: transform 0.6s;
+            cursor: pointer;
+            @include desktop{
+                width: 90%;
+            }
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+   
+}
