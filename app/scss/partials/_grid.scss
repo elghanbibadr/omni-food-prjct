@@ -54,3 +54,11 @@
             column-gap: 2rem;
         }
     }
+
+    @include tablette{
+        .grid--cls4{
+            display: grid;
+            column-gap: 2rem;
+            grid-template-columns: repeat(4,1fr);
+        }
+    }

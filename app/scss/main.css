@@ -519,6 +519,17 @@ p {
   }
 }
 
+@media (min-width: 34em) {
+  .grid--cls4 {
+    display: -ms-grid;
+    display: grid;
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 .btn {
   padding: 1.3rem 2rem;
   border: 0;
@@ -1163,6 +1174,28 @@ header {
 
 .pricing .text-footer p {
   font-size: 1.6rem;
+}
+
+.showcase-property {
+  margin-block: 4rem;
+}
+
+.showcase-property img {
+  height: 1.7rem;
+  background-color: #fdf2e9;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.showcase-property h4 {
+  margin-block: 16px;
+  font-size: 1.9rem;
+}
+
+@media (min-width: 59em) {
+  .showcase-property h4 {
+    font-size: 2.2rem;
+  }
 }
 
 main .section {
