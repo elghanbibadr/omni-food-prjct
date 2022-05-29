@@ -45,6 +45,13 @@ input{
 img{
   object-fit: cover;
 }
+.orangeText{
+    color: $orange;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-block: 0;
+}
   /**
    * Remove the margin in all browsers.
    */
