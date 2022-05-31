@@ -3,6 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 ul{
     list-style: none;
 }
@@ -34,7 +44,7 @@ input{
   // add some basic styles for all the sections
 .section{
  max-width: 130rem;
- padding-inline: 3rem;
+ padding-inline: 4rem;
  @include desktop{
   max-width: 200rem;
    margin-inline: auto;
@@ -59,7 +69,7 @@ img{
     margin: 0;
     font-family: 'IBM Plex Sans', sans-serif;
     font-family: 'Rubik', sans-serif;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
   
   /**

@@ -7,13 +7,14 @@ header{
    
     &__text{
         margin-block: 3.4rem;
+       
     }
     text-align: center;
     &__btn{
         margin-left: 14px;
     }
     &__img{
-        max-width: 80%;
+        width: 100%;
         margin-top: 5rem;   
         justify-self: center;
         @include tablette{
@@ -23,10 +24,14 @@ header{
             margin-top: 0;
         }
     }
-
+  &__title{
+      @include desktopLarge{
+          font-size: 6rem;
+      }
+  }
   &__records{
       margin-top: 4rem;
-      margin-inline: auto;
+      margin-left:4rem;
      display: inline-flex;
       .record-images{
          
@@ -35,8 +40,10 @@ header{
               height: 3rem;
               margin-left: -1.7rem;
               
-              @include desktop{
-                height: 3rem;
+         
+              @include desktopLarge{
+              height:6rem;
+              margin-left: -3rem;
               }
           }
         }
@@ -57,7 +64,11 @@ header{
         text-align: left;
     }
     &__content{
-        align-self: end;
+        align-self: center;
+        @include desktopLarge{
+            position: relative;
+            bottom: 6rem;
+        }
     }
 }
 
