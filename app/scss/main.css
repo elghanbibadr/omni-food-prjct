@@ -488,13 +488,6 @@ p {
   }
 }
 
-@media (min-width: 34em) and (min-width: 59em) {
-  .grid--cls2-md {
-    -ms-grid-rows: (300px)[2];
-        grid-template-rows: repeat(2, 300px);
-  }
-}
-
 .grid--cls4-sm {
   display: -ms-grid;
   display: grid;
@@ -908,7 +901,7 @@ header {
 
 @media (min-width: 59em) {
   .steps .stepsOne__img {
-    width: 30%;
+    width: 40%;
     margin-top: 3rem;
   }
 }
