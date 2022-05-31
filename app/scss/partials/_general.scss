@@ -33,11 +33,10 @@ input{
      ========================================================================== */
   // add some basic styles for all the sections
 .section{
-  max-width: 130rem;
- padding-inline: 4rem;
-//  padding-top: 3rem;
+ max-width: 130rem;
+ padding-inline: 3rem;
  @include desktop{
-   max-width: 200rem;
+  max-width: 200rem;
    margin-inline: auto;
  }
  
@@ -59,7 +58,8 @@ img{
   body {
     margin: 0;
     font-family: 'IBM Plex Sans', sans-serif;
-font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
   }
   
   /**

@@ -62,3 +62,15 @@
             grid-template-columns: repeat(4,1fr);
         }
     }
+
+    // footer grid
+
+    .footer-grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        @include tablette{
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: 1fr;
+        }
+    }

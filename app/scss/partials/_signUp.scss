@@ -1,0 +1,87 @@
+.signUp{
+    border-radius:15px;
+   overflow:hidden;
+   background-color: $orange;
+   box-shadow: 0 0 35px rgb(179, 179, 179);
+   @include desktop{
+       height: fit-content;
+   }
+   &__header{
+   img{
+       width: 100%;
+       background-color: black;
+       height: 250px;
+       @include tablette{
+           height: 100%;
+       }
+   }
+@include desktop{
+    height: 80%;
+}
+
+   }
+   &__body{
+       margin-inline: auto;
+       width: 90%;
+       @include desktop{
+           height: 300px !important;
+       }
+       p{
+           margin-bottom: 4rem;
+           color: #222;
+       }
+       form{
+           input,select{
+               border-radius: 6px;
+               width: 96%;
+               outline: none;
+               font-size: 1.4rem;
+               border: 0;
+               background-color:#fdf2e9;
+               padding: 10px;
+               margin-bottom: 1.2rem;
+              font-weight: 600;
+           }
+        select{
+            width:100%;
+        }
+           label{
+               h5{
+                   font-size:1.4em;
+                   margin-block: 10px;
+                   font-weight: 500;
+               }
+           }
+       }
+   }
+   ::placeholder { 
+       color:#ccc;
+       font-weight: 400;
+     }
+     &__btn{
+         button{
+             width: 100%;
+              margin-block: 1.5rem;
+              padding-block: 1.6rem;
+         }
+     }
+
+     @include desktop{
+         .form__footer{
+             display: flex;
+
+             select,.signUp__btn{
+               height: fit-content;
+             }
+             .signUp__btn button{
+                padding-inline: 1.5rem !important;
+                margin-left: 10px;
+                position: relative;
+               bottom: 2rem;
+             }
+            
+         }
+     }
+
+   
+}
