@@ -1,8 +1,11 @@
 .nav{
     display: flex;
     justify-content: space-between;
-    padding:4rem 2rem;
+    padding:3rem;
     position: relative;
+    @include desktop{
+        padding-inline: 5rem;
+    }
     &__logo{
         height: 2.1rem;
         transform: scale(0.9);
@@ -12,6 +15,7 @@
             transform: scale(1.4);
             position: relative;
             top: 1rem;
+            left: 5rem;
         }
     }
     &__hamburger{
@@ -69,6 +73,7 @@
                 color: $heading;
                 font-size: 2rem;
                 font-weight: bold;
+                transition: color 0.3s linear;
             @include desktop{
                 font-size: 1.8rem;
                 font-weight: 500;
@@ -80,10 +85,22 @@
             @include desktop{
                 margin-inline: 1rem;
             }
+            & a:hover{
+                color: $orange;
+            }
         }
         & :last-child{
             position:relative;
             top: -0.4rem;
         }
     }
+}
+
+.nav-fixed{
+    @media (max-width:$tablette){
+        position: fixed;
+        background-color: white;
+        width: 90%;
+        box-shadow: 0 0 10px #ccc;
+}
 }

@@ -12,3 +12,18 @@ function showNav(){
 function hideNav(){
     navCollapsible.classList.remove('showNav');
 }
+
+
+
+// nav-fixed
+const nav=document.querySelector('.nav');
+const header=document.querySelector('header')
+const observer=new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+        return (!entry.isIntersecting)?nav.classList.add('nav-fixed'):nav.classList.remove('nav-fixed');
+    })
+},{
+ threshold:0.1,
+})
+
+observer.observe(header)

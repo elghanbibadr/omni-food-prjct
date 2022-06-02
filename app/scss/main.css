@@ -459,10 +459,24 @@ p {
     display: grid;
     gap: 1rem;
   }
+  .grid--cls2-lg {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
   .grid--cls2 {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
+}
+
+@media (min-width: 34em) and (min-width: 59em) {
+  .grid--cls2 {
+    -ms-grid-rows: 540px;
+        grid-template-rows: 540px;
+  }
+}
+
+@media (min-width: 34em) {
   .grid--cls3 {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
@@ -572,10 +586,16 @@ p {
   font-size: 1.7rem;
   font-weight: 600;
   cursor: pointer;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
 }
 
 .btn--primary {
   background-color: #e67e22;
+}
+
+.btn--primary:hover {
+  background-color: #e06900;
 }
 
 .btn--secondary {
@@ -599,8 +619,14 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 4rem 2rem;
+  padding: 3rem;
   position: relative;
+}
+
+@media (min-width: 59em) {
+  .nav {
+    padding-inline: 5rem;
+  }
 }
 
 .nav__logo {
@@ -617,6 +643,7 @@ p {
             transform: scale(1.4);
     position: relative;
     top: 1rem;
+    left: 5rem;
   }
 }
 
@@ -695,6 +722,8 @@ p {
   color: #333;
   font-size: 2rem;
   font-weight: bold;
+  -webkit-transition: color 0.3s linear;
+  transition: color 0.3s linear;
 }
 
 @media (min-width: 59em) {
@@ -716,9 +745,23 @@ p {
   }
 }
 
+.nav__list li a:hover {
+  color: #e67e22;
+}
+
 .nav__list :last-child {
   position: relative;
   top: -0.4rem;
+}
+
+@media (max-width: 34em) {
+  .nav-fixed {
+    position: fixed;
+    background-color: white;
+    width: 90%;
+    -webkit-box-shadow: 0 0 10px #ccc;
+            box-shadow: 0 0 10px #ccc;
+  }
 }
 
 header {
@@ -1187,13 +1230,20 @@ header {
 
 @media (min-width: 59em) {
   .pricing .pricing__card {
-    max-width: 40rem;
+    max-width: 50rem;
   }
-  .pricing .pricing__card:first-child {
-    -ms-grid-column-align: end;
-        justify-self: end;
-    margin-right: 3rem;
+}
+
+@media (min-width: 90em) {
+  .pricing .pricing__card {
+    max-width: 70rem;
   }
+}
+
+.pricing .pricing__card:first-child {
+  -ms-grid-column-align: end;
+      justify-self: end;
+  margin-right: 3rem;
 }
 
 .pricing .pricing__card-header p {
@@ -1327,7 +1377,7 @@ header {
 
 @media (min-width: 59em) {
   .signUp__header {
-    height: 80%;
+    height: 100%;
   }
 }
 
@@ -1419,7 +1469,11 @@ main .section {
 }
 
 .footer {
-  padding-inline: 0.5rem !important;
+  padding-inline: 0rem !important;
+}
+
+.footer__list {
+  width: 100%;
 }
 
 .footer__list :first-child {

@@ -11,13 +11,16 @@
         @include tablette{
             width: 100%;
         }
-       @include desktop{
-        max-width: 40rem;
+        @include desktop{
+            max-width: 50rem;
+        }
+         @include desktopLarge{
+             max-width: 70rem;
+         }
         &:first-child{
             justify-self:end;
             margin-right: 3rem;
         }
-       }
         &-header{
           p{
               font-size: 1.6rem;

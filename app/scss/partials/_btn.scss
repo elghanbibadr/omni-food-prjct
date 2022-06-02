@@ -5,10 +5,14 @@
     font-size: 1.7rem;
     font-weight: 600;
     cursor: pointer;
+    transition: background-color 0.5s;
 }
 
 .btn--primary{
     background-color: $orange;
+    &:hover{
+        background-color: #e06900;
+    }
 }
 
 .btn--secondary{

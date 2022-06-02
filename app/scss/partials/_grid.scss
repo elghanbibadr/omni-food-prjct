@@ -3,8 +3,14 @@
         display: grid;
        gap: 1rem;
     }
+    .grid--cls2-lg{
+        grid-template-columns: repeat(2,1fr);
+    }
     .grid--cls2{
         grid-template-columns: repeat(2,1fr);
+        @include desktop{
+            grid-template-rows: 540px;
+        }
     }
     .grid--cls3{
         grid-template-columns: repeat(2,1fr);
