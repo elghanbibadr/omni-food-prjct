@@ -18,10 +18,16 @@
 .btn--secondary{
     background-color: #45260a;
     padding-inline: 6rem;
+    &:hover{
+        background-color: #503b2a;
+    }
 }
 .btn--transparent{
     color: #555;
     background-color: #fff;
+    &:hover{
+        background-color: rgba(219, 219, 219, 0.331);
+    }
 }
 
 .btn--primary,.btn--secondary{

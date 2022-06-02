@@ -45,7 +45,7 @@
     }
 
     .showNav{
-         transform: translateX(-2rem);
+         transform: translateX(0rem);
     }
     &__check,&__hamburger{
         cursor: pointer;
@@ -85,7 +85,7 @@
             }
             }
             @include desktop{
-                margin-inline: 1rem;
+                margin-inline:2rem;
             }
             & a:hover{
                 color: $orange;
