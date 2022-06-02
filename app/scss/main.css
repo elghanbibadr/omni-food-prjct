@@ -571,12 +571,21 @@ p {
       grid-template-rows: repeat(2, 1fr);
 }
 
-@media (min-width: 34em) {
+@media (min-width: 59em) {
   .footer-grid {
     -ms-grid-columns: (1fr)[5];
         grid-template-columns: repeat(5, 1fr);
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[4];
+        grid-template-rows: repeat(4, 1fr);
   }
 }
 
@@ -1476,11 +1485,14 @@ header {
 }
 
 .footer {
-  padding-inline: 0rem !important;
+  padding-left: 1rem !important;
 }
 
 .footer__list {
   width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 
 .footer__list :first-child {
