@@ -45,6 +45,7 @@ input{
 .section{
  max-width: 130rem;
  padding-inline: 4rem;
+ margin-block: 7rem;
  @include desktop{
   max-width: 200rem;
    margin-inline: auto;

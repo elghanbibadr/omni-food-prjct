@@ -45,6 +45,7 @@ html {
 .section {
   max-width: 130rem;
   padding-inline: 4rem;
+  margin-block: 7rem;
 }
 
 @media (min-width: 59em) {
@@ -1462,10 +1463,6 @@ header {
     position: relative;
     bottom: 2rem;
   }
-}
-
-main .section {
-  margin-block: 7rem;
 }
 
 .footer {
