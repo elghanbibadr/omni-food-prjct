@@ -13,6 +13,7 @@
             }
         }
         h1{
+            margin-bottom: 10rem;
             @include desktop{
                 margin-top: 0;
                 font-size: 5rem;
@@ -20,22 +21,14 @@
         }
     }
     .stepsOne{
+        position: relative;
         .stepImg{
             grid-area: 1/2/1/3;
         }
         &__img{
         display: block;
         margin-inline: auto;
-        width: 30%;
-        @include tablette{
-          width: 60%;
-         margin-top: 10rem;
-         }
-        @include desktop{
         width: 40%;
-        margin-top: 3rem;
-      
-        }
         }
         &__content{
             align-self: center;
@@ -52,6 +45,7 @@
             }
 
         }
+       
     }
 //    steps 2
  .stepsTwo,.stepsThree{
@@ -70,4 +64,31 @@
     }
 }
 
+}
+.stepImg{
+    position: relative;
+    align-self: center;
+    &::before,&::after{
+        content: '';
+        display: block;
+        align-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    &::before{
+        height: 80%;
+        border-radius: 50%;
+        width: 70%;
+        background-color: #fdf2e9;
+        z-index: -1111;
+    }
+    &::after{
+        height: 70%;
+        border-radius: 50%;
+        width: 60%;
+        background-color: #fae5d3;
+        z-index: -1;
+    }
 }
